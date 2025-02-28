@@ -1,6 +1,6 @@
 library(SNPRelate)
 
-setwd("/media/stevehein/SteveHeinDATA/Popenaias/final_data/anaylses/PCA/TEST/TEST/")
+setwd("/path/to/wd")
 getwd()
 
 ############################ combined outliers ##################
