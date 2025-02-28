@@ -3,7 +3,7 @@ library(pegas)
 library(ape)
 library(vcfR)
 
-setwd("C:/Users/steve/OneDrive/Desktop/manuscripts/Popenaias/final_data-20250222T151229Z-001/final_data/anaylses/DAPC")
+setwd("path/to/working/directory/")
 getwd()
 
 ## Neutral ONLY dataset ##
@@ -37,22 +37,18 @@ dapc.NoPrio.4<-dapc(seed = 123, pp_genind, grp1$grp)
 3
 # the "optim.a.score" will take the information you just saved into the dapc.np.5 object and determine the 
 # optimimum number of PCs to retain 
-temp1<-optim.a.score(seed = 99, dapc.NoPrio.4, n.sim = 100, smart = T)
-# the optimimum output is displayed graphifically or can be display 
+temp1<-optim.a.score(seed = 99, dapc.NoPrio.4, n.sim = 100, smart = T) 
 # the optimimum output is displayed graphifically or can be display hitting enter below
 temp1$best
-# see the percent variation explained by each PC. remember you are only keeping the first 9 though for 
-# this analysis
-dapc.NoPrio.4$pca.eig/sum(dapc.NoPrio.4$pca.eig)*100
 # rerun the DAPC using the optimial number of PCs as determined in "temp1" i.e. temp1$best
-# again retain all discriminant functions, which should be 3
+# again retain all discriminant functions
 dapc.NoPrio.4<-dapc(pp_genind, grp1$grp, n.pca = temp1$best)
-2
 # plot the results of the dapc. 
 set.seed(909)
 scatter(dapc.NoPrio.4, bg="white", scree.da=F, scree.pca = F,
         posi.da = "bottomright", legend=TRUE, posi.leg = "topleft", solid=1, cstar = 1, 
         clabel = 0, cellipse = 0)
+
 dapc.NoPrio.4$grp
 
 
@@ -90,13 +86,9 @@ dapc.NoPrio.5<-dapc(seed = 99, pp_genind, grp2$grp)
 temp2<-optim.a.score(seed = 99, dapc.NoPrio.5, n.sim = 100)
 # the optimimum output is displayed graphifically or can be display hitting enter below
 temp2$best
-# see the percent variation explained by each PC. remember you are only keeping the first 9 though for 
-# this analysis
-dapc.NoPrio.5$pca.eig/sum(dapc.NoPrio.5$pca.eig)*100
-# rerun the DAPC using the optimial number of PCs as determined in "temp1" i.e. temp1$best
+# rerun the DAPC using the optimial number of PCs as determined in "temp2" i.e. temp2$best
 # again retain all discriminant functions, which should be 3
 dapc.NoPrio.5<-dapc(pp_genind, grp2$grp, n.pca = temp2$best)
-4
 # plot the results of the dapc. 
 set.seed(909)
 scatter(dapc.NoPrio.5, bg="white", scree.da=FALSE, scree.pca = FALSE,
