@@ -1,6 +1,6 @@
 library('diveRsity')
 
-setwd("/media/stevehein/SteveHeinDATA/Popenaias/final_data/anaylses/DivMig/")
+setwd("path/to/wd")
 
 divMigrate(infile = "neutral_pp_snps.gen", outfile = "divMig_0_neutral", boots = 1000, stat = "all",
            filter_threshold = 0, plot_network = TRUE, plot_col = "darkblue", para = TRUE)
