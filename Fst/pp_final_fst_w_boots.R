@@ -1,8 +1,7 @@
 library("hierfstat")
 library('adegenet')
 
-#setwd("/media/stevehein/SteveHeinDATA/Lampsilis_raf/genetics/stacks/output/M2n2m30_full_set/populations")
-setwd("/media/stevehein/SteveHeinDATA/Popenaias/final_data/anaylses/Fst/")
+setwd("path/to/working/directory")
 
 # read genpop file in as genind
 data<-read.genepop("neutral_pp_snps.gen")
@@ -31,8 +30,7 @@ fst
 bootsfst<-hierfstat::boot.ppfst (hierdata [,-2], nboot = 1000, quant = c(0.025, 0.975), diploid = TRUE)
 bootsfst
 
-
 write.csv(bootsfst, file="pp_neutral_fst_boots.csv")
 
 write.csv(fst, file="pp_nuetral_fst.csv")
-  
+   
