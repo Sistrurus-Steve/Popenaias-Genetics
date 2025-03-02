@@ -1,4 +1,4 @@
-setwd("C:/Users/steve/OneDrive/Desktop/manuscripts/Popenaias/final_data-20250222T151229Z-001/final_data/anaylses/GEA_no_SD/")
+setwd("/path/to/working/directory")
 
 if (!require("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
