@@ -1,0 +1,5 @@
+new("pcaProject", projDir = "/media/stevehein/SteveHeinDATA/Popenaias/final_data/anaylses/GEA/", 
+    pcaDir = "ppc.pca/", n = 105L, L = 2677L, K = 105L, center = TRUE, 
+    scale = TRUE, pcaProject.file = "ppc.pcaProject", input.file = "ppc.lfmm", 
+    eigenvalue.file = "ppc.eigenvalues", eigenvector.file = "ppc.eigenvectors", 
+    sdev.file = "ppc.sdev", projection.file = "ppc.projections")
