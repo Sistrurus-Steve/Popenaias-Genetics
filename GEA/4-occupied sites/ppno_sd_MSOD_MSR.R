@@ -1,4 +1,4 @@
-setwd("/media/stevehein/SteveHeinDATA/Popenaias/final_data/anaylses/GEA_no_SD/")
+setwd("/path/to/working/directory")
 
 library(spdep)
 library(adespatial)
