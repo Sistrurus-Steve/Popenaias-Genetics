@@ -1,0 +1,13 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf pp_no_sd.recode.vcf
+	--012
+	--out pp_no_sd
+
+After filtering, kept 82 out of 82 Individuals
+Writing 012 matrix files ... Done.
+After filtering, kept 2675 out of a possible 2675 Sites
+Run Time = 0.00 seconds
