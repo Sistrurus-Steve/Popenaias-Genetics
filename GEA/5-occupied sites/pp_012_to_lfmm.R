@@ -15,7 +15,7 @@ library(vcfR)
 ########################
 ##### Read in Data #####
 ########################
-setwd("/media/stevehein/SteveHeinDATA/Popenaias/final_data/anaylses/GEA")
+setwd("/path/to/working/directory")
 
 Geno_file <- 'pp.012'
 VCF_file <- 'pp.recode.vcf'
