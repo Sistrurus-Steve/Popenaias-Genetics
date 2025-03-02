@@ -1,4 +1,4 @@
-setwd("/media/stevehein/SteveHeinDATA/Popenaias/final_data/anaylses/GEA")
+setwd("/path/to/working/directory")
 
 library(psych)
 library(vegan)
